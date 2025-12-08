@@ -27,7 +27,7 @@ export default defineConfig({
         images: true,
         files: true,
         html: true,
-        assetsPrefix: "/public/",
+        assetsPrefix: "/portfolio/",
       },
     }),
   ],

@@ -1,6 +1,6 @@
 ---
 title: "Hello World! Khởi động hành trình Game Dev"
-date: 2025-12-08
+publishDate: 2025-12-08
 description: "Bài viết đầu tiên đánh dấu sự ra đời của trang blog cá nhân này."
 tags: ["General", "Astro", "Web Dev"]
 ---

@@ -7,7 +7,7 @@ tags: ["General", "Astro", "Web Dev"]
 
 ## 👋 Chào mọi người
 
-Chào mừng đến với **[Tên Blog/Studio của bạn]**!
+Chào mừng đến với Blog cá nhân của mình!
 
 Đây là nơi mình sẽ lưu lại hành trình học tập, phát triển game và những dòng
 code đầy (hoặc ít) bug của mình. Mình tin rằng việc viết ra những gì đã học là

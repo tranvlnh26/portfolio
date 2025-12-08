@@ -34,7 +34,7 @@ const totalCount = allPosts.filter(({ data }) => !data.draft).length;
     <div class="posts">
       {
         posts.map((post) => (
-          <a href={`/blog/${post.slug}/`} class="post-card">
+          <a href={`/portfolio/blog/${post.slug}/`} class="post-card">
             <div class="meta">
               <span class="date">
                 {post.data.publishDate.toLocaleDateString("vi-VN", {

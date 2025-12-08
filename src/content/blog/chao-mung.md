@@ -22,7 +22,7 @@ như một dự án nhỏ để khởi động.
 
 * **Framework:** [Astro](https://astro.build/) (Siêu nhanh và tối ưu cho nội dung tĩnh).
 * **Deploy:** GitHub Pages (CI/CD tự động với GitHub Actions).
-* **Editor:** VS Code + Obsidian.
+* **Editor:** Zed Editor + Notion.
 
 Mình chọn Astro vì nó cho phép mình viết bài bằng **Markdown** - thứ ngôn ngữ
 yêu thích của mọi Developer, đồng thời hỗ trợ hiển thị code snippet rất đẹp.

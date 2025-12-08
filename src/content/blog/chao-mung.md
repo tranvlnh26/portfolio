@@ -1,5 +1,5 @@
 ---
-title: "Hello World! Khởi động hành trình Game Dev"
+title: "Hello World!"
 publishDate: 2025-12-08
 description: "Bài viết đầu tiên đánh dấu sự ra đời của trang blog cá nhân này."
 tags: ["General", "Astro", "Web Dev"]
@@ -7,6 +7,7 @@ tags: ["General", "Astro", "Web Dev"]
 
 ## 👋 Chào mọi người
 
+Mình là **Vinh** sinh viên ngành **Thiết Kế và Phát Triển Game** tại PTIT.
 Chào mừng đến với Blog cá nhân của mình!
 
 Đây là nơi mình sẽ lưu lại hành trình học tập, phát triển game và những dòng
@@ -24,15 +25,15 @@ như một dự án nhỏ để khởi động.
 * **Deploy:** GitHub Pages (CI/CD tự động với GitHub Actions).
 * **Editor:** Zed Editor + Notion.
 
-Mình chọn Astro vì nó cho phép mình viết bài bằng **Markdown** - thứ ngôn ngữ
+Mình chọn Astro vì nó cho phép mình viết bài bằng **Markdown** - một ngôn ngữ
 yêu thích của mọi Developer, đồng thời hỗ trợ hiển thị code snippet rất đẹp.
 
 ### Sắp tới có gì?
 
 Trong thời gian tới, mình sẽ chia sẻ về:
 
-1. Tiến độ dự án game hiện tại (Project: [Tên dự án nếu có]).
+1. Hành trình tìm hiểu kiến thức để trở thành game designer/developer.
 2. Các kỹ thuật Unity/Godot mà mình tìm hiểu được.
-3. Post-mortem (nhìn lại) sau mỗi kỳ Game Jam.
+3. Hay những điều mà mình cảm thấy hữu ích và thú vị.
 
 Cảm ơn bạn đã ghé thăm. Hãy cùng chờ đón bài Devlog kỹ thuật đầu tiên nhé!

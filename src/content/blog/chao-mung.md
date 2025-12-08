@@ -36,5 +36,3 @@ Trong thời gian tới, mình sẽ chia sẻ về:
 3. Post-mortem (nhìn lại) sau mỗi kỳ Game Jam.
 
 Cảm ơn bạn đã ghé thăm. Hãy cùng chờ đón bài Devlog kỹ thuật đầu tiên nhé!
-
----

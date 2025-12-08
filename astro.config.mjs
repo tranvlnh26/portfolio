@@ -1,4 +1,3 @@
-// @ts-check
 import mdx from "@astrojs/mdx";
 import netlify from "@astrojs/netlify";
 import react from "@astrojs/react";
@@ -11,22 +10,8 @@ export default defineConfig({
     react(),
     mdx(),
     favicons({
-      input: ["public/favicon.svg", "public/favicon.png"],
-      name: "tranvlnh",
-      icons: {
-        favicons: true,
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
-        windows: true,
-        yandex: true,
-      },
-      pixel_art: true,
-      manifestMaskable: false,
+      input: ["public/favicon.png"],
       output: {
-        images: true,
-        files: true,
-        html: true,
         assetsPrefix: "/portfolio/",
       },
     }),

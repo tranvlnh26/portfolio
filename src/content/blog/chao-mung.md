@@ -8,6 +8,7 @@ tags: ["General", "Astro", "Web Dev"]
 ## 👋 Chào mọi người
 
 Mình là **Vinh** sinh viên ngành **Thiết Kế và Phát Triển Game** tại PTIT.
+
 Chào mừng đến với Blog cá nhân của mình!
 
 Đây là nơi mình sẽ lưu lại hành trình học tập, phát triển game và những dòng

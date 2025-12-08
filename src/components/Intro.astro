@@ -1,0 +1,175 @@
+---
+import profilePicture from "../assets/profile-picture.png";
+
+interface Props {
+  name: string;
+  subtitle: string;
+  socials: {
+    name: string;
+    url: string;
+    icon: string;
+    color: string;
+  }[];
+}
+
+const { name, subtitle, socials } = Astro.props;
+---
+
+<section class="intro" id="about">
+  <div class="content">
+    <div class="avatar-block">
+      <img src={profilePicture.src} alt="trueberryless" class="pfp" />
+      <div class="inline-socials" aria-label="Liên hệ">
+        {
+          socials.map((social) => (
+            <a
+              href={social.url}
+              class="social-pill"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={`--social-color: ${social.color}`}
+              aria-label={social.name}
+            >
+              <span class="icon" set:html={social.icon} />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+    <div class="text">
+      <h1>Hi, I'm {name}!</h1>
+      <p class="subtitle" set:html={subtitle} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .intro {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .avatar-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .pfp {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--ctp-lavender);
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .pfp:hover {
+    transform: scale(1.05);
+    border-color: var(--ctp-pink);
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .inline-socials {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-pill {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.25px solid var(--social-color);
+    background-color: var(--ctp-surface0);
+    color: var(--social-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .social-pill:hover {
+    background-color: var(--social-color);
+    color: var(--ctp-base);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .icon {
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+  }
+
+  .icon :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--ctp-text);
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    color: var(--ctp-subtext0);
+    opacity: 0.9;
+    line-height: 1.6;
+    max-width: 520px;
+    white-space: normal;
+    word-break: break-word;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle :global(strong) {
+    color: var(--ctp-text);
+    font-weight: 700;
+  }
+
+  @media (max-width: 600px) {
+    .intro {
+      padding: 4rem 2rem;
+    }
+
+    .content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+    }
+
+    .pfp {
+      width: 100px;
+      height: 100px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .inline-socials {
+      justify-content: center;
+    }
+  }
+</style>

@@ -48,11 +48,6 @@ const { Content } = await post.render();
             </div>
           ) : null
         }
-        <img
-          src={`https://visitor-badge.laobi.icu/badge?page_id=portfolio.blog.${post.slug}`}
-          alt="Visitor Badge"
-          class="visitor-badge"
-        />
       </div>
       {
         post.data.description ? (
@@ -142,17 +137,6 @@ const { Content } = await post.render();
     color: var(--ctp-pink);
     background-color: rgba(245, 194, 231, 0.08);
     font-size: 0.9rem;
-  }
-
-  .visitor-badge {
-    height: 20px;
-    vertical-align: middle;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-  }
-
-  .visitor-badge:hover {
-    opacity: 1;
   }
 
   .lead {

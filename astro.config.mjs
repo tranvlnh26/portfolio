@@ -4,11 +4,11 @@ import netlify from "@astrojs/netlify";
 import react from "@astrojs/react";
 import { defineConfig, envField } from "astro/config";
 
+import favicons from "astro-favicons";
+
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tranvlnh26.github.io/",
-  base: "/portfolio",
-  integrations: [react(), mdx()],
+  integrations: [react(), mdx(), favicons()],
   adapter: netlify(),
   env: {
     schema: {

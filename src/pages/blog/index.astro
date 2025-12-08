@@ -35,6 +35,11 @@ const allTags = Object.entries(tagCounts)
       <div class="stats">
         <span class="pill">Tổng bài: {totalCount}</span>
         <span class="pill">Tags: {allTags.length}</span>
+        <img
+          src="https://visitor-badge.laobi.icu/badge?page_id=portfolio.blog"
+          alt="Visitor Badge"
+          class="visitor-badge"
+        />
       </div>
       {
         allTags.length ? (
@@ -150,6 +155,17 @@ const allTags = Object.entries(tagCounts)
     background-color: var(--ctp-surface0);
     border: 1px solid var(--ctp-surface1);
     color: var(--ctp-subtext0);
+  }
+
+  .visitor-badge {
+    height: 20px;
+    vertical-align: middle;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+  }
+
+  .visitor-badge:hover {
+    opacity: 1;
   }
 
   .tag-cloud {

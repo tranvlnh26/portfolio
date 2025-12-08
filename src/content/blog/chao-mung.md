@@ -1,12 +1,40 @@
 ---
-title: "Chào mừng đến với blog"
-description: "Vài dòng giới thiệu nhanh về góc blog mới trên trang Astro."
-publishDate: 2025-02-10
-tags: ["blog", "welcome"]
+title: "Hello World! Khởi động hành trình Game Dev"
+date: 2025-12-08
+description: "Bài viết đầu tiên đánh dấu sự ra đời của trang blog cá nhân này."
+tags: ["General", "Astro", "Web Dev"]
 ---
 
-Xin chào! Đây là bài viết đầu tiên để thử tính năng blog mới.
+## 👋 Chào mọi người
 
-Hiện tại chưa nghĩ ra nội dung cho bài viết này.
+Chào mừng đến với **[Tên Blog/Studio của bạn]**!
 
-Vậy nên hẹn gặp ở những bài tiếp theo!
+Đây là nơi mình sẽ lưu lại hành trình học tập, phát triển game và những dòng
+code đầy (hoặc ít) bug của mình. Mình tin rằng việc viết ra những gì đã học là
+cách tốt nhất để ghi nhớ và kết nối với cộng đồng.
+
+### Tại sao lại là trang web này?
+
+Thay vì dùng Facebook hay WordPress, mình quyết định tự tay build trang blog này
+như một dự án nhỏ để khởi động.
+
+**Tech stack mình đã sử dụng:**
+
+* **Framework:** [Astro](https://astro.build/) (Siêu nhanh và tối ưu cho nội dung tĩnh).
+* **Deploy:** GitHub Pages (CI/CD tự động với GitHub Actions).
+* **Editor:** VS Code + Obsidian.
+
+Mình chọn Astro vì nó cho phép mình viết bài bằng **Markdown** - thứ ngôn ngữ
+yêu thích của mọi Developer, đồng thời hỗ trợ hiển thị code snippet rất đẹp.
+
+### Sắp tới có gì?
+
+Trong thời gian tới, mình sẽ chia sẻ về:
+
+1. Tiến độ dự án game hiện tại (Project: [Tên dự án nếu có]).
+2. Các kỹ thuật Unity/Godot mà mình tìm hiểu được.
+3. Post-mortem (nhìn lại) sau mỗi kỳ Game Jam.
+
+Cảm ơn bạn đã ghé thăm. Hãy cùng chờ đón bài Devlog kỹ thuật đầu tiên nhé!
+
+---

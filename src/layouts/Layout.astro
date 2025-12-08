@@ -4,6 +4,17 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+// Tạo page_id dựa trên đường dẫn của trang
+const pathname = Astro.url.pathname;
+// Loại bỏ base path "/portfolio" và trailing slash
+let pageId = pathname.replace(/^\/portfolio\/?/, "") || "index";
+// Thay thế các ký tự đặc biệt và tạo page_id
+pageId = pageId
+  .split("/")
+  .filter(Boolean)
+  .join(".");
+pageId = `portfolio.${pageId}`;
 ---
 
 <!doctype html>
@@ -23,10 +34,17 @@ const { title } = Astro.props;
     <footer class="footer">
       <div class="footer__inner">
         <p>Made with Astro · Catppuccin palette</p>
-        <div class="footer__dots" aria-hidden="true">
-          <span class="dot dot--mauve"></span>
-          <span class="dot dot--pink"></span>
-          <span class="dot dot--peach"></span>
+        <div class="footer__right">
+          <img
+            src={`https://visitor-badge.laobi.icu/badge?page_id=${pageId}`}
+            alt="Visitor Badge"
+            class="visitor-badge"
+          />
+          <div class="footer__dots" aria-hidden="true">
+            <span class="dot dot--mauve"></span>
+            <span class="dot dot--pink"></span>
+            <span class="dot dot--peach"></span>
+          </div>
         </div>
       </div>
     </footer>
@@ -106,9 +124,26 @@ const { title } = Astro.props;
     color: var(--ctp-subtext0);
   }
 
+  .footer__right {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
   .footer__dots {
     display: inline-flex;
     gap: 0.4rem;
+  }
+
+  .visitor-badge {
+    height: 20px;
+    vertical-align: middle;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+  }
+
+  .visitor-badge:hover {
+    opacity: 1;
   }
 
   .dot {

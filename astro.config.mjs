@@ -6,7 +6,8 @@ import { defineConfig, envField } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "portfolio",
+  site: "https://tranvlnh26.github.io/portfolio",
+  // base: "portfolio",
   integrations: [
     react(),
     mdx(),

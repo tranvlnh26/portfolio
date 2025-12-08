@@ -22,6 +22,10 @@ const allTags = Object.entries(tagCounts)
 <Layout title="Blog — Catppuccin notes">
   <main class="page" id="main-content">
     <section class="hero">
+      <a href="/portfolio/" class="home-btn">
+        <span aria-hidden="true">←</span>
+         Return
+      </a>
       <p class="eyebrow">Blog</p>
       <h1>All Blog Posts</h1>
       <p class="lead">
@@ -95,6 +99,23 @@ const allTags = Object.entries(tagCounts)
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+  }
+
+  .home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--ctp-subtext0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    width: fit-content;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .home-btn:hover {
+    color: var(--ctp-lavender);
   }
 
   .eyebrow {

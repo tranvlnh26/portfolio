@@ -18,6 +18,10 @@ const { Content } = await post.render();
 <Layout title={`${post.data.title} — Blog`}>
   <main class="page" id="main-content">
     <header class="hero">
+      <a href="/portfolio/" class="home-btn">
+        <span aria-hidden="true">←</span>
+        Return
+      </a>
       <p class="eyebrow">Blog</p>
       <h1>{post.data.title}</h1>
       <div class="meta">
@@ -72,6 +76,23 @@ const { Content } = await post.render();
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--ctp-subtext0);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    width: fit-content;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .home-btn:hover {
+    color: var(--ctp-lavender);
   }
 
   .eyebrow {

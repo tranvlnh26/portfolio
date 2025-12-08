@@ -10,6 +10,7 @@ export default defineConfig({
     react(),
     mdx(),
     favicons({
+      masterPicture: "public/favicon.png",
       input: ["public/favicon.png"],
       output: {
         assetsPrefix: "/portfolio/",

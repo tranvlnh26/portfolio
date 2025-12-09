@@ -1,8 +1,11 @@
 ---
-title: "Hello World!"
+title: Hello World!
 publishDate: 2025-12-08
-description: "Bài viết đầu tiên đánh dấu sự ra đời của trang blog cá nhân này."
-tags: ["General", "Astro", "Web Dev"]
+description: Bài viết đầu tiên đánh dấu sự ra đời của trang blog cá nhân này.
+tags:
+  - General
+  - Astro
+  - Web-Dev
 ---
 
 ## 👋 Chào mọi người

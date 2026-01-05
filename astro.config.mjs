@@ -15,7 +15,7 @@ export default defineConfig({
       masterPicture: "public/favicon.png",
       input: ["public/favicon.png"],
       output: {
-        assetsPrefix: "/",
+        assetsPrefix: "",
       },
     }),
   ],

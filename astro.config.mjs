@@ -6,6 +6,19 @@ import { defineConfig, envField } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://tranvlnh.id.vn",
+  base: "/",
+  integrations: [
+    react(),
+    mdx(),
+    favicons({
+      masterPicture: "public/favicon.png",
+      input: ["public/favicon.png"],
+      output: {
+        assetsPrefix: "/",
+      },
+    }),
+  ],
   adapter: netlify(),
   env: {
     schema: {

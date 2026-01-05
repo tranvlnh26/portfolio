@@ -6,12 +6,17 @@ import { defineConfig, envField } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: netlify(),
-  env: {
-    schema: {
-      CLIENT_ID: envField.string({ context: "server", access: "secret" }),
-      CLIENT_SECRET: envField.string({ context: "server", access: "secret" }),
-      REFRESH_TOKEN: envField.string({ context: "server", access: "secret" }),
-    },
-  },
+  site: "https://tranvlnh.id.vn",
+  base: "/",
+  integrations: [
+    react(),
+    mdx(),
+    favicons({
+      masterPicture: "public/favicon.png",
+      input: ["public/favicon.png"],
+      output: {
+        assetsPrefix: "/",
+      },
+    }),
+  ],
 });

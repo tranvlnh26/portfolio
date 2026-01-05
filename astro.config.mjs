@@ -19,4 +19,12 @@ export default defineConfig({
       },
     }),
   ],
+  adapter: netlify(),
+  env: {
+    schema: {
+      CLIENT_ID: envField.string({ context: "server", access: "secret" }),
+      CLIENT_SECRET: envField.string({ context: "server", access: "secret" }),
+      REFRESH_TOKEN: envField.string({ context: "server", access: "secret" }),
+    },
+  },
 });

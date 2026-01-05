@@ -136,3 +136,4 @@ dist
 
 # Netlify
 .netlify
+/src/content/blog/.obsidian

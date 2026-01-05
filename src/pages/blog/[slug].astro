@@ -18,7 +18,7 @@ const { Content } = await post.render();
 <Layout title={`${post.data.title} — Blog`}>
   <main class="page" id="main-content">
     <header class="hero">
-      <a href="/portfolio/" class="home-btn">
+      <a href="/" class="home-btn">
         <span aria-hidden="true">←</span>
         Return
       </a>
@@ -40,7 +40,7 @@ const { Content } = await post.render();
               {post.data.tags.map((tag) => (
                 <a
                   class="tag"
-                  href={`/portfolio/blog?tag=${encodeURIComponent(tag)}`}
+                  href={`/blog?tag=${encodeURIComponent(tag)}`}
                 >
                   {tag}
                 </a>

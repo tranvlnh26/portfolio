@@ -22,7 +22,7 @@ const allTags = Object.entries(tagCounts)
 <Layout title="Blog — Catppuccin notes">
   <main class="page" id="main-content">
     <section class="hero">
-      <a href="/portfolio/" class="home-btn">
+      <a href="/" class="home-btn">
         <span aria-hidden="true">←</span>
          Return
       </a>
@@ -56,7 +56,7 @@ const allTags = Object.entries(tagCounts)
       {
         posts.map((post) => (
           <a
-            href={`/portfolio/blog/${post.slug}/`}
+            href={`/blog/${post.slug}/`}
             class="post-card"
             data-tags={post.data.tags.join(",")}
           >
